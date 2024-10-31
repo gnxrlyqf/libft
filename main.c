@@ -34,6 +34,7 @@ int main(int ac, char **av)
 {
 	t_list *head = ft_lstnew("1 - lhrba");
 
+	
 	ft_lstadd_front(&head, ft_lstnew("2 - lhyaba"));	
 	ft_lstadd_front(&head, ft_lstnew("3 - l7wa"));
 
