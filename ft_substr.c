@@ -21,7 +21,7 @@ char *ft_substr(char const *s, unsigned int start, size_t len)
 	char *new;
 
 	if (!len || !ft_strlen(s))
-		return (malloc(0));
+		return (ft_strdup(""));
 	if ((int)start > ft_strlen(s) - 1)
 		return (NULL);
 	remlen = (size_t)ft_strlen(s) - start;

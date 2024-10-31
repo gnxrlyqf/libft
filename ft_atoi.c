@@ -12,7 +12,7 @@
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	sign;
 	int	result;
@@ -33,4 +33,3 @@ int	ft_atoi(char *str)
 	}
 	return (result * sign);
 }
-// li 7wak

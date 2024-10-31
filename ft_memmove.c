@@ -17,16 +17,19 @@ void *ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned long i;
 
-	if (!dest || !src)
-		return (NULL);
 	if (dest == src)
 		return (dest);
-	i = 0;
-	//handle overlap
-	while (i < n)
+	if (src <= dest)
 	{
-		((char *)dest)[i] = ((char *)src)[i];
-		i++;
+		i = n;
+		while (--i)
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
+	}
+	else
+	{
+		i = -1;	
+		while (++i < n)
+			((unsigned char *)dest)[i] = ((unsigned char *)src)[i];
 	}
 	return (dest);
 }
