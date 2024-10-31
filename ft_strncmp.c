@@ -13,16 +13,18 @@
 #include <string.h>
 #include <stdio.h>
 
-int	ft_strncmp(char *s1, char *s2, unsigned int n)
+int	ft_strncmp(const char *s1, const char *s2, unsigned int n)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (s1[i] && s2[i] && i < n - 1)
+	while (*s1 && (*s1 == *s2) && i < n - 1)
 	{
-		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+		s1++;
+		s2++;
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	if (i == n)
+		return (0);
+	return (*s1 - *s2);
 }
