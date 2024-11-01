@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:12:53 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/10/27 21:26:48 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/01 18:41:24 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,4 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putnbr_fd(x / 10, fd);
 	ft_putchar_fd(x % 10 + '0', fd);
 	return ;
-}
-
-int main()
-{
-	ft_putnbr_fd(0, 1);
 }

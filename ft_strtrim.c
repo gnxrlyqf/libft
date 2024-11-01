@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 00:09:36 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 18:39:18 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/01 18:42:39 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	new = malloc(++len + 1);
 	if (!new)
 		return (NULL);
-	ft_memset(new, 'a', len);
+	ft_memset(new, 'o', len);
 	new[len] = 0;
 	while (*new)
 	{
