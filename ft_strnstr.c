@@ -19,7 +19,7 @@ char	*ft_strnstr(char *big, char *little, size_t len)
 	int j;
 	char *temp;
 
-	if (!big || !little || !*little || !len)
+	if (!big || !little || !*little)
 		return (big);
 	i = 0;
 	while (big[i] && i < (int)len)

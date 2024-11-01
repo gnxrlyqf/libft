@@ -13,6 +13,7 @@
 #include <stddef.h>
 #include "libft.h"
 
+//remove
 size_t	ft_strlcat(char *dest, char const *src, size_t size)
 {
 	size_t	i;
@@ -21,15 +22,18 @@ size_t	ft_strlcat(char *dest, char const *src, size_t size)
 
 	i = 0;
 	sl = ft_strlen(src);
-	//strnlen
 	dl = ft_strlen(dest);
-	if (!size || size < dl)
+	if (!size)
+		return (ft_strlen(src));
+	if (!*src)
+		return ((dl < size) * dl + (dl >= size) * size);
+	if (size <= dl)
 		return (sl + size);
 	while (src[i] && i < size - 1 - dl)
 	{
 		dest[dl + i] = src[i];
 		i++;
 	}
-	dest[dl + i] = '\0';
+	dest[dl + i] = 0;
 	return (dl + sl);
 }
