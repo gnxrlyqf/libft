@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:18:58 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 21:47:32 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 15:16:45 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,17 @@
 
 void ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *head;
+	t_list *curr;
 
-	if (!lst || !*lst || !new)
+	if (!new)
 		return ;
-	head = *lst;
-	new->next = head;
-	*lst = new;
+	if (!*lst)
+	{
+		*lst = new;
+		return ;
+	}
+	curr = *lst;
+	while (curr->next)
+		curr = curr->next;
+	curr->next = new;
 }

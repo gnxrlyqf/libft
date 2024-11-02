@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 02:23:41 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 21:47:44 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:08:31 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list *curr;
 	t_list *new;
 
-	if (!lst)
+	if (!lst || !f || !del)
 		return (NULL);
 	curr = lst;
 	while (curr)

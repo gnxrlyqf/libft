@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 23:32:21 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 21:47:37 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:10:05 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	if (!lst || !*lst)
+	if (!lst || !*lst || !del)
 		return ;
 	while (ft_lstlast(*lst))
-		ft_lstdelone(ft_lstlast(*lst), *del);
+		ft_lstdelone(ft_lstlast(*lst), del);
 	lst = NULL;
 }

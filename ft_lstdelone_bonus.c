@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:22:41 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 21:47:39 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 16:22:57 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 
 void ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
+	if (!lst || !del)
 		return ;
-	if (lst->content)
-		free(lst->content);
-	del(lst);
+	del(lst->content);
+	free(lst);
 }
