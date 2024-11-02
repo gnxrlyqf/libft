@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 18:31:32 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 21:48:16 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 22:03:59 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,12 @@
 
 typedef struct	s_list
 {
-	void *content;
-	struct s_list *next;
+	void			*content;
+	struct s_list	*next;
 }				t_list;
 
 int		ft_isalpha(int c);
-int 	ft_isdigit(int c);
+int		ft_isdigit(int c);
 int 	ft_isalnum(int c);
 int 	ft_isascii(int c);
 int 	ft_isprint(int c);
