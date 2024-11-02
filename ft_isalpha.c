@@ -6,13 +6,13 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 11:54:43 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/10/22 12:05:38 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:34:28 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	return ((c >= 65 && c <= 90) || (c >= 97 && c <= 122));
 }

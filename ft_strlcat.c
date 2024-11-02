@@ -6,14 +6,13 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/23 23:38:10 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/10/25 00:56:13 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:52:06 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include "libft.h"
 
-//remove
 size_t	ft_strlcat(char *dest, char const *src, size_t size)
 {
 	size_t	i;

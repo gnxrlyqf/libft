@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:20:52 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 22:36:44 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:55:12 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@
 #include <stddef.h>
 #include <stdio.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	size_t remlen;
-	char *new;
+	size_t	remlen;
+	char	*new;
 
 	if (!len || !ft_strlen(s) || (int)start > ft_strlen(s) - 1)
 		return (ft_strdup(""));

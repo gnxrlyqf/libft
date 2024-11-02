@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 23:32:21 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/02 20:14:23 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:39:27 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-void ft_lstclear(t_list **lst, void (*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *current;
-	t_list *temp;
+	t_list	*current;
+	t_list	*temp;
 
 	if (!lst || !del)
 		return ;

@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 00:09:36 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 22:30:24 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:54:40 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int check(char c, char const *set)
+int	check(char c, char const *set)
 {
 	while (*set)
 	{
@@ -24,17 +24,17 @@ int check(char c, char const *set)
 	return (0);
 }
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	int i;
-	int len;
-	char *new;
+	int		i;
+	int		len;
+	char	*new;
 
 	len = ft_strlen(s1);
 	while (--len && check(s1[len], set))
-		;	
+		;
 	if (!len)
-		return(ft_strdup(""));
+		return (ft_strdup(""));
 	i = -1;
 	while (s1[++i] && check(s1[i], set))
 		len--;

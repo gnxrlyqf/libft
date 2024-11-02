@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/26 19:20:23 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 19:58:43 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:49:35 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,11 @@ int	count_words(const char *str, char c)
 	return (count);
 }
 
-char *ft_strndup(char *str, int start, char c)
+char	*ft_strndup(char *str, int start, char c)
 {
-	int i;
-	int size;
-	char *new;
+	int		i;
+	int		size;
+	char	*new;
 
 	size = 0;
 	i = start;

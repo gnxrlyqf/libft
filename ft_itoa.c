@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 01:02:04 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/10/25 02:27:20 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:37:50 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 #include <limits.h>
 #include <stdio.h>
 
-int count_digits(long n)
+int	count_digits(long n)
 {
-	int count;
+	int	count;
 
 	count = 1;
 	if (n < 0)
@@ -33,11 +33,11 @@ int count_digits(long n)
 	return (count);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	int len;
-	long num;
-	char *new;
+	int		len;
+	long	num;
+	char	*new;
 
 	num = (long)((n >= 0) * n) - ((n < 0) * n);
 	len = count_digits((long)n);

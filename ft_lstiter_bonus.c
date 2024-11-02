@@ -6,15 +6,15 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 02:12:05 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/01 21:47:41 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:40:10 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstiter(t_list *lst, void (*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	t_list *curr;
+	t_list	*curr;
 
 	if (!lst)
 		return ;

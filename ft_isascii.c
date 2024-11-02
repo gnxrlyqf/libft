@@ -6,13 +6,13 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 12:14:18 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/10/26 19:16:32 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/02 21:34:37 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
