@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 23:17:52 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/03 02:35:46 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 03:17:21 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	if (!nmemb || !size)
 		return (malloc(0));
+	// why tho
 	if (nmemb * size > UINT_MAX || size > UINT_MAX || nmemb > UINT_MAX)
 		return (NULL);
 	new = malloc(nmemb * size);
