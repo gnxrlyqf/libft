@@ -6,13 +6,11 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 23:32:21 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/02 21:39:27 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:36:08 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {

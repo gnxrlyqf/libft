@@ -6,11 +6,10 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 16:09:12 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/02 21:47:31 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:37:48 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putstr_fd(char *s, int fd)

@@ -6,11 +6,10 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 23:06:45 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/10/24 23:07:24 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:38:01 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(char *src)

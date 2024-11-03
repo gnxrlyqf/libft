@@ -6,14 +6,11 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 01:02:04 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/02 21:37:50 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:36:00 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <limits.h>
-#include <stdio.h>
 
 int	count_digits(long n)
 {

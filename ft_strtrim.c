@@ -6,13 +6,11 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/25 00:09:36 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/02 21:54:40 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:39:11 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int	check(char c, char const *set)
 {

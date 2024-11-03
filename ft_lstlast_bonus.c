@@ -6,12 +6,11 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 22:15:44 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/02 21:40:49 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 02:36:50 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 t_list	*ft_lstlast(t_list *lst)
 {
