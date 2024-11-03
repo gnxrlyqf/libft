@@ -6,7 +6,7 @@
 #    By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/22 14:27:45 by mchetoui          #+#    #+#              #
-#    Updated: 2024/11/01 21:44:24 by mchetoui         ###   ########.fr        #
+#    Updated: 2024/11/03 14:50:19 by mchetoui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -30,9 +30,9 @@ FILES = ${MFILES} ${BFILES}
 all: $(NAME)
 
 libft.a: $(MFILES:.c=.o)
-	ar rcs libft.a $(MFILES:.c=.o)
+	ar rcs libft.a $?
 bonus: $(FILES:.c=.o)
-	ar rcs libft.a $(FILES:.c=.o)
+	ar rcs libft.a $?
 %.o: %.c
 	$(CC) $(CFLAGS) -o $@ -c $<
 clean:

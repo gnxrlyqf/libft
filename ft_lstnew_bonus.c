@@ -6,7 +6,7 @@
 /*   By: mchetoui <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/27 21:58:58 by mchetoui          #+#    #+#             */
-/*   Updated: 2024/11/03 02:36:58 by mchetoui         ###   ########.fr       */
+/*   Updated: 2024/11/03 14:56:45 by mchetoui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@ t_list	*ft_lstnew(void *content)
 	if (!new)
 		return (NULL);
 	new->content = content;
+	new->next = NULL;
 	return (new);
 }
